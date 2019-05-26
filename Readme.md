@@ -20,3 +20,14 @@ Transaction on Ropsten Testnet - https://ropsten.etherscan.io/tx/0xd54faa0775101
 - If the contributors are happy with the progress of the project they can vote to pay the developers. If 2/3rd majority is happy with the progress the money is automatically transferred to the developers.
 
 This mechanism ensures that the developers are kept motivated to progress on the project otherise they cannot claim their rewards and the contributors can get back their money.
+
+## Functions Description
+
+| Name  | Description | Parameters  |   Return
+| ------------- | ------------- | ------------- | ------------- |
+| fund  | payable function that accepts ether as funds if deposit is allowed. | N/A | N/A
+| withdrawFunds  | withdraw funds if the Withdrawl is allowed | N/A | N/A
+| happyWithProgress  | Vote on the progress of the Project if Voting Open | _vote (bool) | N/A
+| cleanupVotes | private function cleans up the votes and locks the voting for the next round. | N/A | N/A
+| askForMoney | Owner can ask for release of money to pay for development based on the progress of the project. | N/A | N/A
+| payTheDevs | private function transfers funds to the Owner to pay for development. | N/A | N/A
